@@ -73,7 +73,18 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: iransans
+      fonts:
+      - asset: assets/fonts/iransans/ttf/IRANSansWeb.ttf
+      - asset: assets/fonts/iransans/ttf/IRANSansWeb_Medium.ttf
+        weight: 300
+      - asset: assets/fonts/iransans/ttf/IRANSansWeb_Light.ttf
+        weight: 200
+      - asset: assets/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf
+        weight: 100
+      - asset: assets/fonts/iransans/ttf/IRANSansWeb_Bold.ttf
+        weight: 700
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
