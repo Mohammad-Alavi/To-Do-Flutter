@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: RoutesProvider.TASK_LIST_PAGE,
+      initialRoute: RoutesProvider.HOME_PAGE,
       routes: RoutesProvider.routes(context),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );

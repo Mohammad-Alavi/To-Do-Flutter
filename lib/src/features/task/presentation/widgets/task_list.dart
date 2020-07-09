@@ -41,6 +41,7 @@ class _TaskListState extends State<TaskList> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Colors.black12),
+      // TODO Change to ListView.builder
       child: ListView(
         children: <Widget>[
           TaskCard(),
