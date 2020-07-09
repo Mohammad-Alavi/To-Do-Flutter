@@ -1,4 +1,6 @@
+import 'package:belbool_to_do/src/core/route_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,12 +10,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'iransans',
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: RoutesProvider.TASK_LIST_PAGE,
+      routes: RoutesProvider.routes(context),
+//      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
