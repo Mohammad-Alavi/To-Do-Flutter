@@ -14,11 +14,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         fontFamily: 'iransans',
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.purple,
         accentColor: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: RoutesProvider.SPLASH_SCREEN,
+      initialRoute: RoutesProvider.LOGIN_PAGE,
       routes: RoutesProvider.routes(context),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
