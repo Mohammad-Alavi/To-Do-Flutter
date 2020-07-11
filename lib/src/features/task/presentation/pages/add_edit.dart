@@ -13,6 +13,7 @@ class _AddEditPageState extends State<AddEditPage> {
   final List<CustomTextFormField> listOfDescriptionFields = [];
   final List<TextEditingController> listOfDescriptionTextControllers = [];
   TextEditingController titleTextEditingController = TextEditingController();
+  TextEditingController tagTextEditingController = TextEditingController();
   String dropdownValue = 'Ready';
 
   @override
@@ -43,20 +44,15 @@ class _AddEditPageState extends State<AddEditPage> {
                   hintText: 'Title',
                 ),
                 CustomTextFormField(
-                  controller: titleTextEditingController,
+                  controller: tagTextEditingController,
                   onTap: () {},
-                  hintText: 'Title',
-                ),
-                CustomTextFormField(
-                  controller: titleTextEditingController,
-                  onTap: () {},
-                  hintText: 'Title',
+                  hintText: 'Tag: work, home, school...',
                 ),
                 Row(
                   children: <Widget>[
                     Text(
                       'Description',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                     IconButton(
                       onPressed: _addDescriptionTextField,
